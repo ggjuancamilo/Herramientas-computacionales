@@ -1,0 +1,60 @@
+% Este es un documento de LaTeX
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,graphicx}
+\author{Juan CAmilo Gallego}
+\date{16 de Agosto de 2015}
+\title{Tercer quiz \LaTeX}
+\begin{document}
+\bibliographystyle{amsplain}
+\nocite{Alder1,anderson2008se}
+\maketitle
+
+
+Aqui va algo de texto, luego empieza una seccion
+
+\section{Ecuacione5-7 Short distances}
+
+Now let’s think about smaller distances. Subdividing the meter is easy. Without much difficulty we can mark off one thousand equal spaces which add up to one meter. With somewhat more difficulty, but in a similar way (using a good microscope), we can mark off a thousand equal subdivisions of the millimeter to make a scale of microns (millionths of a meter). It is difficult to continue to smaller scales, because we cannot “see” objects smaller than the wavelength of visible light (about $5*10-7$ meters)
+\includegraphics[scale0.5]{f05-10_tc_big.png}
+\end{figure}
+
+\begin{equation}
+\vec{F}=m\vec{a}
+\end{equation}
+
+\begin{equation*}
+\vec{F}=m\vec{a}
+\end{equation*}
+
+\section{Tablas}
+
+En la tabla \ref{Ta:Notas}, estan las notas de los parciales
+\begin{table}[ht]
+\centering
+\begin{tabular}{| l | c | r | l |}
+\hline
+Parcial & 
+Primero & 
+Segundo & 
+Tercero \\ \hline
+Ana & 5 & 4 & 3 \\ \hline
+Bea & 3 & 4 & 5 \\ \hline
+Carlos & 2 & 3 & 4 \\ \hline
+\end{tabular}
+\caption{Notas de parcial}\label{Ta:Notas}
+\end{table}
+
+\section{Figuras}
+Esta informacion la tome de \cite{anderson2008}
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{Circulo09c.png}
+\caption{Imagen}\label{Fi:Imag}
+\end{figure}
+
+%\begin{thebibliography}{9}
+%\bibitem{} Frey, G. \textit{Links between stable elliptic curves and certain diophantine equations}, Annales universitatis Saraviensis, \textbf{1} (1986), 1--40. \bibitem{wiles1} Wiles, Andrew, \textit{Modular curves and certain class group}, Invent. Math. \textbf{58} (1980), 1--35. \bibitem{wiles2} Wiles, Andrew, \textit{Modular elliptic curves and Fermat’s Last Theorem}, Annals of Mathematics \textbf{142} (1995), 443--551. \bibitem{taylor-wiles} Taylor, Richard and Wiles, Andrew, \textit{Ring-theoretic properties of certain Hecke algebras}, Annals of Mathematics \textbf{142} (1995), 553--572.
+%\end{thebibliography}
+\bibliography{biblio}
+
+\end{document}
